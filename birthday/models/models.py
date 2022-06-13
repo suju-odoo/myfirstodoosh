@@ -3,8 +3,9 @@
 from odoo import models, fields, api
 
 
-class partner(models.Model):
+class Partner(models.Model):
     _inherit = 'res.partner'
+    
     birthday = fields.Datetime('Date of birth')
 
 
