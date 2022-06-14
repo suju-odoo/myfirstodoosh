@@ -20,7 +20,12 @@
     'depends' : ['base'],
     
     'data' : [
-        'data/academy_demo.xml'
+        'data/academy_demo.xml',
+        'security/academy_security.xml',
+        'security/ir.model.access.csv',
+        'views/academy_menuitems.xml',
+        'views/course_views.xml'
+        
     ],
     
     'demo' : [
