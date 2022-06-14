@@ -15,17 +15,15 @@
     
     'category' : 'Training',
     
-    'version' : '0.1',
+    'version' : '0.2',
     
     'depends' : ['base'],
     
     'data' : [
-        
-        
+        'data/academy_demo.xml'
     ],
     
     'demo' : [
-        
-        
+#         'demo/academy_demo.xml'
     ]
 }
