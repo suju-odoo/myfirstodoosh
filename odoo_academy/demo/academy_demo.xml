@@ -1,5 +1,32 @@
 <?xml version = "1.0" encoding="uft-8"?>
-    <odoo>
-        <data>
-        </data>
-    </odoo>
+
+<odoo>
+    <data noupdate="1">
+        <record model = "academy.course" id="erp_101" >
+            <field name = "name" >ERP 101</field>
+            <field name = "description">Learn ERP system</field>
+            <field name = "level">beginner</field>            
+        </record>
+
+        <record model = "academy.course" id = "accounting_200">
+            <field name = "name" >Accounting 200</field>
+            <field name = "description" >
+            Accounting 200:
+            Intermediate Accounting Course
+            Learning about Cost Accounting and pricing and Revenue Analysis
+            </field>
+            <field name = "level">intermediate</field>            
+        </record>
+
+        <record model = "academy.course" id = "compsci_101">
+            <field name = "name" >Computer Science 101</field>
+            <field name = "description" >
+            Computer Science 101:
+            101 but advanced computer science
+            Learning about leetcoding
+            </field>
+            <field name = "level">intermediate</field>            
+        </record>
+
+    </data>
+</odoo>
