@@ -17,11 +17,11 @@
         <menuitem name="Change again"
                   id="menu_academy"
                   sequence="1"/>
-        <menuitem name="Odoo Academy"
+        <menuitem name="Odoo Academyddd"
                   id="menu_academy_sub"
                   parent="menu_academy"
                   sequence="2"/>
-        <menuitem name="Courses"
+        <menuitem name="Coursesthird"
                   id="menu_academy_courses"
                   parent="menu_academy_sub"
                   sequence="3"
