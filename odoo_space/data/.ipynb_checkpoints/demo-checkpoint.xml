@@ -1,0 +1,13 @@
+<!-- <?xml version="1.0" encoding="uft-8"?> -->
+
+<odoo>
+    <data>
+      <record model = 'space.spaceship' id = 'spaceship_001'>
+        <field name = 'name'>spaceship_001</field>
+        <field name = 'ship_dimensions'>100.00</field>
+        <field name = 'fuel_type'>gasoline</field>
+        <field name = 'ship_type'>flyby</field>
+        <field name = 'number_of_passengers'>133</field>
+      </record>
+    </data>
+</odoo>
