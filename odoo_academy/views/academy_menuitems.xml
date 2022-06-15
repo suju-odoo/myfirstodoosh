@@ -40,7 +40,7 @@
                   action="course_list_action"/>
         
         <menuitem name="Sessions"
-                  id="menu_academy_courses"
+                  id="menu_academy_sessions"
                   parent="menu_academy_sub"
                   sequence="4"
                   action="session_list_action"/>
