@@ -1,0 +1,30 @@
+<!-- <?xml version="1.0" encoding="uft-8"?> -->
+
+<odoo>
+    <data>
+        <record model = "academy.course" id="erp_101">
+            <field name = "name" >ERP 101</field>
+            <field name = "description">Learn ERP system</field>
+            <field name = "level">beginner</field>            
+        </record>
+
+        <record model = "academy.course" id = "accounting_200">
+            <field name = "name" >There is not such thing as Accounting</field>
+            <field name = "description" >
+            Would it?    
+            </field>
+            <field name = "level">intermediate</field>            
+        </record>
+
+        <record model = "academy.course" id = "compsci_101">
+            <field name = "name" >Computer Science 101</field>
+            <field name = "description" >
+            Computer Science 101:
+            101 but advanced computer science
+            Learning about leetcoding
+            </field>
+            <field name = "level">intermediate</field>            
+        </record>
+
+    </data>
+</odoo>
