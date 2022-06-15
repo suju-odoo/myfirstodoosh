@@ -28,6 +28,8 @@
         'data/demo.xml',
         'views/views.xml',
         'views/templates.xml',
+        'security/ir.model.access.csv',
+        'security/space_security.xml'
     ],
     # only loaded in demonstration mode
     'demo': [

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+     <record id="group_space_admin" model = "res.groups">
+          <field name="name">Space Admin</field>
+     </record>
+     <record id="group_space_crew" model = "res.groups">
+          <field name="name">Space Crew</field>
+     </record>
+     <record id="group_space_general" model = "res.groups">
+          <field name="name">Space General User</field>
+     </record>
+
+     <record id="space_admin_access" model = "ir.rule">
+          <field name ="name">Admin Access</field>
+          <field name="perm_read" eval="1"/>
+          <field name="perm_write" eval="1"/>
+          <field name="perm_create" eval="1"/>
+          <field name="perm_unlink" eval="1"/>
+          <field name="model_id" ref="model_space_spaceship"/>
+     </record>
+
+     <record id = "space_crew_access" model = "ir.rule">
+          <field name = "name">Crew Access</field>
+          <field name="perm_read" eval="1"/>
+          <field name="perm_write" eval="1"/>
+          <field name="perm_create" eval="1"/>
+          <field name="perm_unlink" eval="0"/>
+          <field name="model_id" ref="model_space_spaceship"/>
+     </record>
+
+     <record id = "space_general_access" model = "ir.rule">
+          <field name = "name">General Member Access</field>
+          <field name="perm_read" eval="1"/>
+          <field name="perm_write" eval="0"/>
+          <field name="perm_create" eval="0"/>
+          <field name="perm_unlink" eval="0"/>
+          <field name="model_id" ref="model_space_spaceship"/>
+     </record>
+          
+
+</odoo>
