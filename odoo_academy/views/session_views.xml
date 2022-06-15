@@ -30,7 +30,7 @@
                <field name="arch" type="xml">
                     <tree string="Session List">
                          <field name ="name"/>
-                         <field name ="instuctor_id"/>
+                         <field name ="instructor_id"/>
                     </tree>
                </field>
           </record>
