@@ -43,7 +43,18 @@
 
     <!-- Top menu item -->
 
-    <menuitem name="Space" id="menu_space"/>
+    <menuitem name="Space"
+    id="menu_space"
+    sequence="1"/>
+    <menuitem name="Space"
+    id="menu_space_sub"
+    parent="menu_space"
+    sequence="2"/>
+    <menuitem name="Space"
+    id="menu_space_spaceships"
+    parent="menu_space_sub"
+    sequence="3"
+    action="space_list_action"/>
 
     <!-- menu categories -->
 <!--
