@@ -18,9 +18,6 @@
                                         <page string="Students">
                                              <field name="student_ids"/>
                                         </page>
-                                        <page string="Sessions">
-                                             <field name="session_ids"/>
-                                        </page>
                                    </notebook>
                               </group>
                          </sheet>
