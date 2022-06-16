@@ -27,17 +27,26 @@ class Course(models.Model):
     
     additional_fee = fields.Float(string="Additional Fee", default=10.00)
     
-    total_price = fields.Float(string="Total Price", readonly=True)
+    total_price = fields.Float(string="Total Price", compute = '_onchange_total_price', store=True)
+
+    session_ids = fields.One2many(comodel_name="academy.session",
+    inverse_name="course_id",
+    string="Sessions")
     
 #   this method will be called whenever 'base_price' and 'additional_fee' are changed.
-    @api.onchange('base_price','additional_fee')
+# onchange vs depends => use depends everytime.
+
+    @api.depends('base_price','additional_fee')
     def _onchange_total_price(self):
         if self.base_price < 0.00:
             raise UserError('Base price cannot be set lower than 0')
         self.total_price = self.base_price + self.additional_fee
-    
+        
+    # done at run time 
     @api.constrains('additional_fee')
     def _check_additional_fee(self):
         for record in self:
             if record.additional_fee < 10.00:
                 raise ValidationError('Additional Fees cannot be less than 10: %s' % record.additional_fee)
+                
+                
