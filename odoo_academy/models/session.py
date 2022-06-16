@@ -52,3 +52,14 @@ class Session(models.Model):
             else:
                 continue
     
+    
+    state = fields.Selection(string = "States",
+                            selection=[('draft','Draft'),
+                                      ('open','In Progress'),
+                                      ('done','Done'),
+                                      ('canceled','Canceled')],
+                            default='draft',
+                            required=True)
+    
+    total_price = fields.Float(string = "Total Price",
+                              related = 'course_id.total_price')
