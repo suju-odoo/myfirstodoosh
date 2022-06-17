@@ -17,7 +17,7 @@
     
     'version' : '0.2',
     
-    'depends' : ['sale'], 
+    'depends' : ['sale', 'website'], 
     # ['base']
     'data' : [
         'data/academy_demo.xml',
@@ -28,7 +28,8 @@
         'views/session_views.xml',
         'views/sale_views_inherit.xml',
         'views/product_views_inheirit.xml',
-        'wizard/sale_wizard_view.xml'
+        'wizard/sale_wizard_view.xml',
+        'report/session_report_templates.xml'
         
     ],
     
