@@ -38,9 +38,10 @@ class Course(models.Model):
 
     @api.depends('base_price','additional_fee')
     def _onchange_total_price(self):
-        if self.base_price < 0.00:
-            raise UserError('Base price cannot be set lower than 0')
-        self.total_price = self.base_price + self.additional_fee
+        for record in self:
+            if record.base_price < 0.00:
+                raise UserError('Base price cannot be set lower than 0')
+            record.total_price = record.base_price + record.additional_fee
         
     # done at run time 
     @api.constrains('additional_fee')

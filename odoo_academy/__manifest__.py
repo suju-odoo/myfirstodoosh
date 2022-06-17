@@ -17,7 +17,7 @@
     
     'version' : '0.2',
     
-    'depends' : ['sale', 'website'], 
+    'depends' : ['base','sale', 'website'], 
     # ['base']
     'data' : [
         'data/academy_demo.xml',
