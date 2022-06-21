@@ -17,4 +17,5 @@ class tvu(models.Model):
         # ids that are expired quotations.
         # it skips those ids whose expiration date are not set. 
         ids = self.env['sale.order'].search([['validity_date','<=',d1],['state','=','draft']])
-        ids.unlink()
+        for id in ids:
+            id.state = 'cancel'
